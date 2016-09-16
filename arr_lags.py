@@ -34,7 +34,7 @@ daria = {
 			'age': 20,
 		},{
 				'name':'Катя',
-				'age':14,
+				'age':18,
 		}],
 	}
 		
@@ -47,8 +47,9 @@ emps = [ivan,daria]
 print("\nИмена сотрудниоков,чьи дети стараше 18 лет:\n")
 for i in emps:
 	for j in i['children']:
-		if j['age'] > 18:
+		if j['age'] >= 18:
 			print (i['name'])
+			break
 	
 	
 	
